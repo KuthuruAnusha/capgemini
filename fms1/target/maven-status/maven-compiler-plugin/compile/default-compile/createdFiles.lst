@@ -1,0 +1,7 @@
+com\cg\fms\dao\FlightDaoImpl.class
+com\cg\fms\service\FlightServiceImpl.class
+com\cg\fms\bean\Flight.class
+com\cg\fms\service\FlightService.class
+com\cg\fms\dao\FlightDao.class
+com\cg\fms\exception\FlightException.class
+com\cg\fms\pl\Client.class
