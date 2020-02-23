@@ -10,7 +10,8 @@ public interface FlightService {
 
 public void validateFlight(Flight flight);
 public int addFlight(Flight flight) throws FlightException;
-public Flight modifyFlight(Flight flight,int id) throws FlightException;
+public Flight modifyFlight(Flight flight,int id,String s,String b) throws FlightException;
+public boolean carriername(String flight) throws FlightException;
 
 public List<Flight > viewFlight() throws FlightException;
 

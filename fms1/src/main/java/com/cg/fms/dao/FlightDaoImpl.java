@@ -23,23 +23,20 @@ public class FlightDaoImpl implements FlightDao{
 	public int addFlight(Flight flight) throws FlightException {
 
 		boolean flag = list.stream().anyMatch(p-> p.getFlightNumber()==flight.getFlightNumber());
-		if(flag==true)
-		{
-			throw new FlightException("FlightNumber already exists");
-		}
-		else
-		{
+		
 			list.add(flight);
-		}
+		
 		return flight.getFlightNumber();
 	}
 
-	public Flight modifyFlight(Flight flight,int id) throws FlightException {
+	public Flight modifyFlight(Flight flight,int id,String s,String b) throws FlightException {
 
 		boolean flag = list.stream().anyMatch(p-> p.getFlightNumber()==flight.getFlightNumber());
 		if(flag==true)
 		{
 			flight.setSeatCapacity(id);
+			flight.setCarrierName(s);
+			flight.setFlightModel(b);
 		}
 		else
 		{
